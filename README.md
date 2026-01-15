@@ -1,6 +1,16 @@
+
 # Sorting Algorithm Performance Analysis
 
+<p align="center">
+	<img src="https://img.shields.io/badge/Java-17%2B-blue" alt="Java 17+"/>
+	<img src="https://img.shields.io/badge/Maven-3.8%2B-blue" alt="Maven 3.8+"/>
+	<img src="https://img.shields.io/badge/Node.js-18%2B-green" alt="Node.js 18+"/>
+	<a href="https://github.com/Urthella/algortihm-test-sim"><img src="https://img.shields.io/github/license/Urthella/algortihm-test-sim" alt="License"/></a>
+</p>
+
 A comprehensive Java/Spring Boot + React application for analyzing and comparing sorting algorithm performance.
+
+**GitHub Repository:** [Urthella/algortihm-test-sim](https://github.com/Urthella/algortihm-test-sim)
 
 ## 🚀 Quick Start
 
@@ -101,9 +111,11 @@ Radix Sort (LSD)     RANDOM           100000         8.765         1536.0
 - Maven 3.8+
 - Node.js 18+ (for frontend)
 
-See [REQUIREMENTS.md](REQUIREMENTS.md) for detailed setup instructions.
+
+See [REQUIREMENTS.md](REQUIREMENTS.md) for detailed setup instructions and environment requirements.
 
 ## 🎓 Course Project
+
 
 Algorithms Course Term Project: Performance Analysis of Sorting Algorithms
 
@@ -119,6 +131,7 @@ Algorithms Course Term Project: Performance Analysis of Sorting Algorithms
 2. Start frontend: `cd frontend && npm run dev`
 3. Open http://localhost:5173
 
+
 ### Mode 2: Swing GUI (Desktop)
 ```bash
 java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --gui
@@ -128,3 +141,19 @@ java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --gui
 ```bash
 java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench --export results.csv
 ```
+
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome! Please open an issue or submit a pull request on GitHub.
+
+## 📄 License
+
+This project is for educational purposes. See the repository for license details.
+
+---
+
+<p align="center">
+	<a href="https://github.com/Urthella/algortihm-test-sim">GitHub Repo</a> • <a href="#">Issues</a> • <a href="#">Pull Requests</a>
+</p>

@@ -1,7 +1,10 @@
+
 # Sorting Algorithm Performance Analysis - Requirements & Setup Guide
 
+> **Not:** Bu dosya, projenin [GitHub reposunda](https://github.com/Urthella/algortihm-test-sim) güncel tutulmaktadır. Kurulum ve gereksinimler için lütfen aşağıdaki adımları takip edin.
+
 ## Project Overview
-This project provides a comprehensive performance analysis framework for comparing sorting algorithms:
+This project provides a comprehensive performance analysis framework for comparing sorting algorithms. For full documentation and source code, visit the [GitHub repository](https://github.com/Urthella/algortihm-test-sim).
 - **Quick Sort** - Divide-and-conquer with median-of-three pivot
 - **Heap Sort** - In-place comparison sort using binary heap
 - **Shell Sort** - Generalized insertion sort with Ciura's gap sequence
@@ -10,18 +13,19 @@ This project provides a comprehensive performance analysis framework for compari
 
 ## System Requirements
 
+
 ### Backend (Java)
 | Requirement | Version |
 |-------------|---------|
-| Java JDK | 17 or higher |
-| Maven | 3.8+ |
-| Memory | Minimum 2GB RAM recommended |
+| Java JDK    | 17 or higher |
+| Maven       | 3.8+        |
+| Memory      | Minimum 2GB RAM recommended |
 
 ### Frontend (React)
 | Requirement | Version |
 |-------------|---------|
-| Node.js | 18.0+ |
-| npm | 9.0+ |
+| Node.js     | 18.0+   |
+| npm         | 9.0+    |
 
 ## Project Structure
 ```
@@ -43,9 +47,11 @@ This project provides a comprehensive performance analysis framework for compari
 
 ## Installation & Setup
 
+
 ### 1. Clone/Download the Project
 ```bash
-cd "Algoritma proje"
+git clone https://github.com/Urthella/algortihm-test-sim.git
+cd algortihm-test-sim
 ```
 
 ### 2. Backend Setup (Spring Boot)
@@ -228,7 +234,7 @@ java -Xmx4g -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench
 4. Warm up JVM with initial runs before recording
 
 ## License
-Educational project for Algorithm Analysis course.
+This project is for educational use only. See [LICENSE](https://github.com/Urthella/algortihm-test-sim/blob/master/LICENSE) for details.
 
 ## Authors
 Algorithm Analysis Project Team
