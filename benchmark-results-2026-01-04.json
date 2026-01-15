@@ -1,0 +1,674 @@
+{
+  "results": [
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 36.99132,
+      "stddevMillis": 7.1205537473991445,
+      "bestMillis": 30.1879,
+      "worstMillis": 46.4574,
+      "memoryBytes": 102736
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 46.318,
+      "stddevMillis": 0.24836614100959897,
+      "bestMillis": 45.9611,
+      "worstMillis": 46.7176,
+      "memoryBytes": 114056
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 45.5094,
+      "stddevMillis": 0.602645119452568,
+      "bestMillis": 44.5544,
+      "worstMillis": 46.4541,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 45.83366,
+      "stddevMillis": 0.7635206574808568,
+      "bestMillis": 44.7472,
+      "worstMillis": 47.096,
+      "memoryBytes": 247848
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 46.34368,
+      "stddevMillis": 0.4101209597179837,
+      "bestMillis": 45.7343,
+      "worstMillis": 47.0161,
+      "memoryBytes": 114056
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 46.20678,
+      "stddevMillis": 0.2436768302485897,
+      "bestMillis": 45.8501,
+      "worstMillis": 46.5777,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 42.99464,
+      "stddevMillis": 6.035593490817617,
+      "bestMillis": 31.0154,
+      "worstMillis": 47.2754,
+      "memoryBytes": 78056
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 46.58218,
+      "stddevMillis": 0.8106287347485284,
+      "bestMillis": 45.6556,
+      "worstMillis": 47.9818,
+      "memoryBytes": 283848
+    },
+    {
+      "algorithm": "Radix Sort (LSD)",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 46.51166,
+      "stddevMillis": 0.8773321345989784,
+      "bestMillis": 45.313,
+      "worstMillis": 47.842,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 46.56942,
+      "stddevMillis": 0.9802460372783968,
+      "bestMillis": 45.1396,
+      "worstMillis": 47.7825,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 46.37442,
+      "stddevMillis": 0.6149340855734051,
+      "bestMillis": 45.6655,
+      "worstMillis": 47.1002,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 61.39734,
+      "stddevMillis": 1.2445871935706232,
+      "bestMillis": 59.7627,
+      "worstMillis": 63.5474,
+      "memoryBytes": 150936
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 46.32452,
+      "stddevMillis": 0.9345298612671508,
+      "bestMillis": 45.3689,
+      "worstMillis": 47.9136,
+      "memoryBytes": 16344
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 40.50312,
+      "stddevMillis": 7.218405755123495,
+      "bestMillis": 31.3915,
+      "worstMillis": 47.0974,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 58.41988,
+      "stddevMillis": 5.909394096318167,
+      "bestMillis": 47.0208,
+      "worstMillis": 62.936,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 44.10346,
+      "stddevMillis": 5.157359397443618,
+      "bestMillis": 33.8337,
+      "worstMillis": 47.3285,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 46.7132,
+      "stddevMillis": 0.4570585651751863,
+      "bestMillis": 46.1952,
+      "worstMillis": 47.5357,
+      "memoryBytes": 32496
+    },
+    {
+      "algorithm": "Shell Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 51.93094,
+      "stddevMillis": 6.094209462957439,
+      "bestMillis": 45.8993,
+      "worstMillis": 60.2446,
+      "memoryBytes": 27280
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 44.6189,
+      "stddevMillis": 4.168553797661726,
+      "bestMillis": 36.3379,
+      "worstMillis": 47.5013,
+      "memoryBytes": 78056
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 43.2479,
+      "stddevMillis": 5.726645584633293,
+      "bestMillis": 31.8698,
+      "worstMillis": 47.074,
+      "memoryBytes": 114056
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 57.38284,
+      "stddevMillis": 5.854166524997389,
+      "bestMillis": 46.0593,
+      "worstMillis": 61.7923,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 43.6385,
+      "stddevMillis": 6.427498256709216,
+      "bestMillis": 30.8224,
+      "worstMillis": 47.3711,
+      "memoryBytes": 78056
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 46.68228,
+      "stddevMillis": 0.6111393373036954,
+      "bestMillis": 45.6986,
+      "worstMillis": 47.4722,
+      "memoryBytes": 114056
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 47.57178,
+      "stddevMillis": 7.926555612471283,
+      "bestMillis": 37.392,
+      "worstMillis": 61.8773,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 42.11988,
+      "stddevMillis": 6.296782657643504,
+      "bestMillis": 31.4937,
+      "worstMillis": 47.5464,
+      "memoryBytes": 78056
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 43.65514,
+      "stddevMillis": 6.132348158609392,
+      "bestMillis": 31.4002,
+      "worstMillis": 47.0754,
+      "memoryBytes": 283848
+    },
+    {
+      "algorithm": "Merge Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 43.82602,
+      "stddevMillis": 3.437699767228081,
+      "bestMillis": 37.2981,
+      "worstMillis": 46.5817,
+      "memoryBytes": 465824
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 42.97996,
+      "stddevMillis": 5.843376165403011,
+      "bestMillis": 31.6291,
+      "worstMillis": 47.5331,
+      "memoryBytes": 244000
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 63.68308,
+      "stddevMillis": 2.6688701140370243,
+      "bestMillis": 61.7282,
+      "worstMillis": 68.7676,
+      "memoryBytes": 74256
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 2535.78162,
+      "stddevMillis": 46.92688045883297,
+      "bestMillis": 2481.4593,
+      "worstMillis": 2607.3906,
+      "memoryBytes": 273136
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 42.03698,
+      "stddevMillis": 6.305839862349821,
+      "bestMillis": 31.1822,
+      "worstMillis": 47.9166,
+      "memoryBytes": 74248
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 47.39254,
+      "stddevMillis": 2.155273449565043,
+      "bestMillis": 43.519,
+      "worstMillis": 50.0568,
+      "memoryBytes": 74256
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 610.65436,
+      "stddevMillis": 14.801657557935867,
+      "bestMillis": 587.4733,
+      "worstMillis": 628.8917,
+      "memoryBytes": 273136
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 43.93728,
+      "stddevMillis": 6.468460702640157,
+      "bestMillis": 31.0008,
+      "worstMillis": 47.2554,
+      "memoryBytes": 74248
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 93.0291,
+      "stddevMillis": 3.0804930494971092,
+      "bestMillis": 89.7585,
+      "worstMillis": 97.4008,
+      "memoryBytes": 244048
+    },
+    {
+      "algorithm": "Bogo Sort 🎲",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 5061.22808,
+      "stddevMillis": 94.56454933682919,
+      "bestMillis": 4975.8398,
+      "worstMillis": 5244.1605,
+      "memoryBytes": 424200
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 46.0962,
+      "stddevMillis": 1.2539145074525615,
+      "bestMillis": 43.7445,
+      "worstMillis": 47.3015,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 46.50182,
+      "stddevMillis": 0.5029138828865236,
+      "bestMillis": 45.594,
+      "worstMillis": 47.0887,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 53.2681,
+      "stddevMillis": 7.317996301447549,
+      "bestMillis": 44.2521,
+      "worstMillis": 62.2843,
+      "memoryBytes": 460824
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 38.85662,
+      "stddevMillis": 6.831318837062138,
+      "bestMillis": 31.3473,
+      "worstMillis": 46.6744,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 46.62252,
+      "stddevMillis": 0.5302966354786725,
+      "bestMillis": 45.7219,
+      "worstMillis": 47.1488,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 50.23384,
+      "stddevMillis": 5.875822323249742,
+      "bestMillis": 44.4125,
+      "worstMillis": 61.163,
+      "memoryBytes": 526656
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 39.52566,
+      "stddevMillis": 6.970556107112259,
+      "bestMillis": 31.0641,
+      "worstMillis": 47.3054,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 46.7946,
+      "stddevMillis": 0.6198827792413659,
+      "bestMillis": 45.9644,
+      "worstMillis": 47.6238,
+      "memoryBytes": 74064
+    },
+    {
+      "algorithm": "Quick Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 44.38016,
+      "stddevMillis": 4.293987144181966,
+      "bestMillis": 36.0622,
+      "worstMillis": 47.6729,
+      "memoryBytes": 658320
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "RANDOM",
+      "size": 1000,
+      "meanMillis": 45.2229,
+      "stddevMillis": 2.528860291119302,
+      "bestMillis": 40.2685,
+      "worstMillis": 47.1582,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "RANDOM",
+      "size": 10000,
+      "meanMillis": 46.13892,
+      "stddevMillis": 0.803888617657944,
+      "bestMillis": 44.7614,
+      "worstMillis": 46.9322,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "RANDOM",
+      "size": 100000,
+      "meanMillis": 60.95376,
+      "stddevMillis": 1.0465554100954235,
+      "bestMillis": 59.4433,
+      "worstMillis": 62.7252,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 1000,
+      "meanMillis": 46.36672,
+      "stddevMillis": 0.808357550592558,
+      "bestMillis": 45.2503,
+      "worstMillis": 47.6615,
+      "memoryBytes": 169792
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 10000,
+      "meanMillis": 46.61542,
+      "stddevMillis": 0.8624917469750072,
+      "bestMillis": 45.4999,
+      "worstMillis": 47.6513,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "PARTIALLY_SORTED",
+      "size": 100000,
+      "meanMillis": 58.05952,
+      "stddevMillis": 5.73550302254301,
+      "bestMillis": 47.3863,
+      "worstMillis": 62.5114,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 1000,
+      "meanMillis": 41.16458,
+      "stddevMillis": 6.6228622858700605,
+      "bestMillis": 31.2536,
+      "worstMillis": 47.0238,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 10000,
+      "meanMillis": 46.69064,
+      "stddevMillis": 0.5540160163749781,
+      "bestMillis": 45.77,
+      "worstMillis": 47.4719,
+      "memoryBytes": 1024
+    },
+    {
+      "algorithm": "Heap Sort",
+      "pattern": "REVERSE_SORTED",
+      "size": 100000,
+      "meanMillis": 54.09018,
+      "stddevMillis": 7.483312155028681,
+      "bestMillis": 44.4426,
+      "worstMillis": 62.9927,
+      "memoryBytes": 1024
+    }
+  ],
+  "complexityInfo": {
+    "Radix Sort (LSD)": {
+      "algorithmName": "Radix Sort (LSD)",
+      "bestCase": "O(nk)",
+      "averageCase": "O(nk)",
+      "worstCase": "O(nk)",
+      "spaceComplexity": "O(n + k)",
+      "isStable": true,
+      "isInPlace": false,
+      "description": "Non-comparison sorting algorithm that sorts integers by processing individual digits. Uses LSD (Least Significant Digit) approach with radix 256. k = number of digits (4 for 32-bit integers).",
+      "bestCaseScenario": "When k (number of digits) is small relative to n",
+      "worstCaseScenario": "When numbers have many digits or when n is small (overhead dominates)"
+    },
+    "Shell Sort": {
+      "algorithmName": "Shell Sort",
+      "bestCase": "O(n log n)",
+      "averageCase": "O(n^1.25) to O(n^1.5)",
+      "worstCase": "O(n²)",
+      "spaceComplexity": "O(1)",
+      "isStable": false,
+      "isInPlace": true,
+      "description": "Generalization of insertion sort that allows exchange of items that are far apart. Uses Ciura's gap sequence (701, 301, 132, 57, 23, 10, 4, 1) for optimal performance.",
+      "bestCaseScenario": "When the array is already partially sorted",
+      "worstCaseScenario": "Depends on gap sequence; with poor gaps can degrade to O(n²)"
+    },
+    "Merge Sort": {
+      "algorithmName": "Merge Sort",
+      "bestCase": "O(n log n)",
+      "averageCase": "O(n log n)",
+      "worstCase": "O(n log n)",
+      "spaceComplexity": "O(n)",
+      "isStable": true,
+      "isInPlace": false,
+      "description": "Divide-and-conquer algorithm that divides the array into halves, recursively sorts them, and merges the sorted halves. Guarantees O(n log n) and maintains stability.",
+      "bestCaseScenario": "Performance is consistent across all input patterns",
+      "worstCaseScenario": "No true worst case - always O(n log n), but requires O(n) additional space"
+    },
+    "Bogo Sort 🎲": {
+      "algorithmName": "Bogo Sort 🎲",
+      "bestCase": "O(n)",
+      "averageCase": "O((n-1)×n!)",
+      "worstCase": "O(∞)",
+      "spaceComplexity": "O(1)",
+      "isStable": false,
+      "isInPlace": true,
+      "description": "Randomly shuffles the array until it's sorted. The most inefficient sorting algorithm known. Included purely for entertainment and to demonstrate what NOT to do. For n=10, average case requires about 36 million shuffles!",
+      "bestCaseScenario": "When the array is already sorted (miracle!)",
+      "worstCaseScenario": "Could theoretically never finish (heat death of universe scenario)"
+    },
+    "Quick Sort": {
+      "algorithmName": "Quick Sort",
+      "bestCase": "O(n log n)",
+      "averageCase": "O(n log n)",
+      "worstCase": "O(n²)",
+      "spaceComplexity": "O(log n)",
+      "isStable": false,
+      "isInPlace": true,
+      "description": "Divide-and-conquer algorithm that selects a pivot element and partitions the array around it. Uses median-of-three pivot selection and switches to insertion sort for small subarrays.",
+      "bestCaseScenario": "When the pivot consistently divides the array into roughly equal halves",
+      "worstCaseScenario": "When the array is already sorted or reverse sorted (without good pivot selection)"
+    },
+    "Heap Sort": {
+      "algorithmName": "Heap Sort",
+      "bestCase": "O(n log n)",
+      "averageCase": "O(n log n)",
+      "worstCase": "O(n log n)",
+      "spaceComplexity": "O(1)",
+      "isStable": false,
+      "isInPlace": true,
+      "description": "Comparison-based algorithm that builds a max-heap from the array and repeatedly extracts the maximum element. Guarantees O(n log n) performance regardless of input.",
+      "bestCaseScenario": "Performance is consistent across all input patterns",
+      "worstCaseScenario": "No true worst case - always O(n log n), but has poor cache locality"
+    }
+  },
+  "summary": {
+    "fastestAlgorithm": "Radix Sort (LSD)",
+    "mostMemoryEfficient": "Heap Sort",
+    "totalBenchmarkTimeMs": 53355,
+    "totalRuns": 54,
+    "algorithmSummaries": {
+      "Radix Sort (LSD)": {
+        "algorithm": "Radix Sort (LSD)",
+        "avgTimeMs": 44.81014666666667,
+        "avgMemoryKb": 253.69704861111111,
+        "minTimeMs": 30.1879,
+        "maxTimeMs": 47.9818,
+        "testCount": 9
+      },
+      "Merge Sort": {
+        "algorithm": "Merge Sort",
+        "avgTimeMs": 45.86036,
+        "avgMemoryKb": 232.59548611111111,
+        "minTimeMs": 30.8224,
+        "maxTimeMs": 61.8773,
+        "testCount": 9
+      },
+      "Shell Sort": {
+        "algorithm": "Shell Sort",
+        "avgTimeMs": 49.14847777777778,
+        "avgMemoryKb": 25.192708333333332,
+        "minTimeMs": 31.3915,
+        "maxTimeMs": 63.5474,
+        "testCount": 9
+      },
+      "Bogo Sort 🎲": {
+        "algorithm": "Bogo Sort 🎲",
+        "avgTimeMs": 948.9692222222222,
+        "avgMemoryKb": 190.48697916666666,
+        "minTimeMs": 31.0008,
+        "maxTimeMs": 5244.1605,
+        "testCount": 9
+      },
+      "Heap Sort": {
+        "algorithm": "Heap Sort",
+        "avgTimeMs": 49.47807111111111,
+        "avgMemoryKb": 19.3125,
+        "minTimeMs": 31.2536,
+        "maxTimeMs": 62.9927,
+        "testCount": 9
+      },
+      "Quick Sort": {
+        "algorithm": "Quick Sort",
+        "avgTimeMs": 45.808835555555554,
+        "avgMemoryKb": 226.79947916666666,
+        "minTimeMs": 31.0641,
+        "maxTimeMs": 62.2843,
+        "testCount": 9
+      }
+    }
+  }
+}
