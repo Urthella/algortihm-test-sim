@@ -183,7 +183,12 @@ function App() {
     axios.get('http://localhost:8080/api/algorithms')
       .then(res => {
         setAlgorithms(res.data);
-        if (res.data.length > 0) setConfig(c => ({ ...c, algorithm: res.data[0] }));
+        // Keep the preferred default (Quick Sort) if the backend offers it,
+        // otherwise fall back to the first available algorithm.
+        if (res.data.length > 0) setConfig(c => ({
+          ...c,
+          algorithm: res.data.includes(c.algorithm) ? c.algorithm : res.data[0]
+        }));
       })
       .catch(err => console.error("Failed to fetch algorithms", err));
     
