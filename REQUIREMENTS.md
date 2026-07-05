@@ -35,7 +35,6 @@ This project provides a comprehensive performance analysis framework for compari
 │   ├── controller/          # REST API endpoints
 │   ├── data/                # Test data generator
 │   ├── dto/                 # Data transfer objects
-│   ├── gui/                 # Swing GUI (optional)
 │   ├── model/               # Domain models
 │   ├── service/             # Business logic
 │   └── util/                # Utilities (Stats, MemoryUtil, ResultsExporter)
@@ -91,26 +90,13 @@ npm run dev
 
 The frontend will be available at: `http://localhost:5173`
 
-## Running Modes
+## Running the Application
 
-### Mode 1: Web Interface (Recommended)
-1. Start the backend: `mvnw.cmd spring-boot:run`
+1. Start the backend: `./mvnw spring-boot:run` (Windows: `mvnw.cmd spring-boot:run`)
 2. Start the frontend: `cd frontend && npm run dev`
 3. Open http://localhost:5173 in your browser
 
-### Mode 2: Swing GUI (Desktop)
-```bash
-java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --gui
-```
-
-### Mode 3: Console Benchmark
-```bash
-# Run with default settings
-java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench
-
-# Export results to CSV
-java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench --export results.csv
-```
+The REST API can also be used directly (e.g. with `curl` or Postman) — see the endpoints below.
 
 ## API Endpoints
 
@@ -119,8 +105,11 @@ java -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench --export 
 | `/api/algorithms` | GET | List available algorithms |
 | `/api/patterns` | GET | List data patterns |
 | `/api/algorithms/complexity` | GET | Get complexity info for all algorithms |
+| `/api/algorithms/{name}/complexity` | GET | Get complexity info for one algorithm |
 | `/api/benchmark` | POST | Run single benchmark |
 | `/api/benchmark/compare` | POST | Run comprehensive comparison |
+
+Validation limits: `size` 1 – 1,000,000 and `trials` 1 – 50; invalid requests return HTTP 400 with an error message.
 
 ### Example API Request
 ```json
@@ -147,10 +136,10 @@ POST /api/benchmark/compare
 ## Running Tests
 ```bash
 # Run all tests
-mvnw.cmd test
+./mvnw test          # Windows: mvnw.cmd test
 
-# Run with verbose output
-mvnw.cmd test -Dtest=AlgorithmsTest
+# Run a single test class
+./mvnw test -Dtest=AlgorithmsTest
 ```
 
 ## Dependencies
@@ -159,9 +148,7 @@ mvnw.cmd test -Dtest=AlgorithmsTest
 - Spring Boot 3.2.2
 - Spring Boot Web Starter
 - Spring Boot DevTools
-- JFreeChart 1.5.4 (for Swing GUI)
 - JUnit 5 (testing)
-- Lombok (optional)
 
 ### Frontend (package.json)
 - React 19
@@ -185,7 +172,8 @@ mvnw.cmd test -Dtest=AlgorithmsTest
 - [x] Theoretical complexity information
 - [x] CSV and JSON export
 - [x] Comprehensive unit tests
-- [x] Swing desktop GUI
+- [x] Request validation with descriptive HTTP 400 errors
+- [x] GitHub Actions CI (backend tests + frontend lint/build)
 
 ### Export Formats
 - **CSV** - Spreadsheet compatible
@@ -202,7 +190,7 @@ mvnw.cmd test -Dtest=AlgorithmsTest
 | Sizes | 1000, 10000, 100000 | Test dataset sizes |
 
 ### Algorithm-Specific Notes
-- **RadixSort**: Designed for non-negative integers only
+- **RadixSort**: Supports negative integers via sign-bit remapping on the most significant byte
 - **QuickSort**: Uses insertion sort for subarrays ≤16 elements
 - **ShellSort**: Uses Ciura's optimized gap sequence
 
@@ -223,8 +211,8 @@ mvnw.cmd clean package -DskipTests
 
 ### Out of memory errors
 ```bash
-# Increase heap size
-java -Xmx4g -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench
+# Increase heap size when running the packaged jar
+java -Xmx4g -jar target/sorting-analysis-0.1.0.jar
 ```
 
 ## Performance Tips
@@ -234,7 +222,8 @@ java -Xmx4g -cp target/sorting-analysis-0.1.0.jar com.algoproject.App --bench
 4. Warm up JVM with initial runs before recording
 
 ## License
-This project is for educational use only. See [LICENSE](https://github.com/Urthella/algortihm-test-sim/blob/master/LICENSE) for details.
+MIT — see [LICENSE](https://github.com/Urthella/algortihm-test-sim/blob/master/LICENSE) for details.
 
 ## Authors
-Algorithm Analysis Project Team
+- [Utku Demirtaş](https://github.com/Urthella)
+- [Furkan Karafil](https://github.com/thefcan)
