@@ -107,7 +107,8 @@ public record ComplexityInfo(
             true,
             false,
             "Non-comparison sorting algorithm that sorts integers by processing individual digits. " +
-            "Uses LSD (Least Significant Digit) approach with radix 256. k = number of digits (4 for 32-bit integers).",
+            "Uses LSD (Least Significant Digit) approach with radix 256. k = number of digits (4 for 32-bit integers). " +
+            "Negative integers are handled via sign-bit remapping on the most significant byte.",
             "When k (number of digits) is small relative to n",
             "When numbers have many digits or when n is small (overhead dominates)"
         );

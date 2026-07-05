@@ -266,17 +266,44 @@ class AlgorithmsTest {
         }
 
         @Test
-        @DisplayName("Comparison-based algorithms handle negative values")
+        @DisplayName("All algorithms handle negative values")
         void sortsNegativeValues() {
-            // Note: RadixSort is designed for non-negative integers
-            List<SortingAlgorithm> comparisonBased = List.of(
-                new QuickSort(), new HeapSort(), new ShellSort(), new MergeSort());
-            
             int[] data = {-5, 3, -1, 0, -10, 7, -3};
-            for (SortingAlgorithm algo : comparisonBased) {
+            for (SortingAlgorithm algo : ALGORITHMS) {
                 int[] copy = Arrays.copyOf(data, data.length);
                 algo.sort(copy);
                 assertTrue(isSorted(copy), algo.name() + " failed with negative values");
+            }
+        }
+
+        @Test
+        @DisplayName("All algorithms handle extreme values including Integer.MIN_VALUE")
+        void sortsExtremeValues() {
+            int[] data = {Integer.MIN_VALUE, Integer.MAX_VALUE, 0, -1, 1,
+                Integer.MIN_VALUE + 1, Integer.MAX_VALUE - 1, -1_000_000, 1_000_000};
+            int[] expected = Arrays.copyOf(data, data.length);
+            Arrays.sort(expected);
+            for (SortingAlgorithm algo : ALGORITHMS) {
+                int[] copy = Arrays.copyOf(data, data.length);
+                algo.sort(copy);
+                assertArrayEquals(expected, copy, algo.name() + " failed with extreme values");
+            }
+        }
+
+        @Test
+        @DisplayName("All algorithms sort random data with mixed signs correctly")
+        void sortsMixedSignRandomData() {
+            ThreadLocalRandom rng = ThreadLocalRandom.current();
+            int[] data = new int[5_000];
+            for (int i = 0; i < data.length; i++) {
+                data[i] = rng.nextInt(-1_000_000, 1_000_000);
+            }
+            int[] expected = Arrays.copyOf(data, data.length);
+            Arrays.sort(expected);
+            for (SortingAlgorithm algo : ALGORITHMS) {
+                int[] copy = Arrays.copyOf(data, data.length);
+                algo.sort(copy);
+                assertArrayEquals(expected, copy, algo.name() + " failed on mixed-sign random data");
             }
         }
 
@@ -314,7 +341,7 @@ class AlgorithmsTest {
         }
 
         @Test
-        @DisplayName("RadixSort is stable for non-negative integers")
+        @DisplayName("RadixSort sorts correctly")
         void radixSortIsStable() {
             RadixSort radixSort = new RadixSort();
             int[] data = randomArray(1_000);
