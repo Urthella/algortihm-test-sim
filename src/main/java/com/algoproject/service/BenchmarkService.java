@@ -20,6 +20,10 @@ import java.util.stream.Collectors;
 @Service
 public class BenchmarkService {
 
+    // Upper bounds to keep a single HTTP request from tying up the server for minutes
+    public static final int MAX_SIZE = 1_000_000;
+    public static final int MAX_TRIALS = 50;
+
     private final Map<String, SortingAlgorithm> algorithms;
     private final DataGenerator generator;
 
@@ -42,6 +46,8 @@ public class BenchmarkService {
         if (algorithm == null) {
             throw new IllegalArgumentException("Unknown algorithm: " + request.algorithm());
         }
+        validateSize(request.size());
+        validateTrials(request.trials());
 
         BenchmarkRunner runner = new BenchmarkRunner(List.of(algorithm), generator, request.trials());
         List<BenchmarkResult> results = runner.run(
@@ -70,10 +76,18 @@ public class BenchmarkService {
                 .collect(Collectors.toCollection(ArrayList::new));
         } else {
             algosToTest = request.algorithms().stream()
-                .map(algorithms::get)
-                .filter(Objects::nonNull)
+                .map(name -> {
+                    SortingAlgorithm algo = algorithms.get(name);
+                    if (algo == null) {
+                        throw new IllegalArgumentException("Unknown algorithm: " + name);
+                    }
+                    return algo;
+                })
                 .toList();
         }
+
+        request.sizes().forEach(this::validateSize);
+        validateTrials(request.trials());
         
         // Determine which patterns to test
         DataPattern[] patternsToTest;
@@ -179,5 +193,19 @@ public class BenchmarkService {
             throw new IllegalArgumentException("Unknown algorithm: " + algorithmName);
         }
         return algo.getComplexityInfo();
+    }
+
+    private void validateSize(int size) {
+        if (size < 1 || size > MAX_SIZE) {
+            throw new IllegalArgumentException(
+                "Size must be between 1 and " + MAX_SIZE + ", got: " + size);
+        }
+    }
+
+    private void validateTrials(int trials) {
+        if (trials < 1 || trials > MAX_TRIALS) {
+            throw new IllegalArgumentException(
+                "Trials must be between 1 and " + MAX_TRIALS + ", got: " + trials);
+        }
     }
 }
